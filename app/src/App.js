@@ -1,23 +1,12 @@
 import './App.css';
-import { useState } from 'react';
-import ClassComponent from './Components/ClassComponent';
-import FuncComponent from './Components/FuncComponent';
+import First from './Components/First/First';
+import Second from './Components/Second/Second';
 
 function App() {
-  let [isClass, setIsClass] = useState('false');
-
-  const isClassToggle = () => {
-    setIsClass(!isClass);
-  }
-
-  console.log(isClass);
-
   return (
     <div className="App">
-      {isClass === true
-        ? <ClassComponent isClassToggle={isClassToggle} />
-        : <FuncComponent isClassToggle={isClassToggle} />
-      }
+     <First />
+     <Second />
     </div>
   );
 }

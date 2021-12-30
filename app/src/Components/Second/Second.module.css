@@ -1,0 +1,36 @@
+.container {
+  background-color: #202229;
+  border-radius: 10px;  
+  padding: 0 20px 20px 20px;
+  box-shadow: 0 0 10px 0 black;
+  margin-bottom: 40px;
+  max-width: 1100px;
+}
+
+.label {
+  font-size: 34px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.label span {
+  margin: 0 10px 0 0;
+}
+
+.checkbox {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.outerBlock, .innerBlock {
+  background-color: #121418;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.outerBlock {
+  background-color: #292d36;
+  box-shadow: 0 0 10px 0 black;
+}

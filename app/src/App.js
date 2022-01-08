@@ -4,19 +4,20 @@ import ClassComponent from './Components/ClassComponent';
 import FuncComponent from './Components/FuncComponent';
 
 function App() {
-  let [isClass, setIsClass] = useState('false');
-
+  let [isClass, setIsClass] = useState(false);
   const isClassToggle = () => {
     setIsClass(!isClass);
   }
 
-  console.log(isClass);
+  let [classComponentTime, setClassComponentTime] = useState(0);  
+
+  let [funcComponentTime, setFuncComponentTime] = useState(0);
 
   return (
     <div className="App">
       {isClass === true
-        ? <ClassComponent isClassToggle={isClassToggle} />
-        : <FuncComponent isClassToggle={isClassToggle} />
+        ? <ClassComponent isClassToggle={isClassToggle} time={classComponentTime} setClassComponentTime={setClassComponentTime}/>
+        : <FuncComponent isClassToggle={isClassToggle} time={funcComponentTime} setFuncComponentTime={setFuncComponentTime}/>
       }
     </div>
   );
